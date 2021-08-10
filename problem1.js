@@ -1,10 +1,11 @@
-module.exports = (inventory, id) => {
+pb1 = (arr, id) => {
     const carinfo=[];
-    for(let i=0; i<inventory.length; i++){
-      if(inventory[i].id == id){
-        carinfo.push(inventory[i]);
+    for(let i=0; i<arr.length; i++){
+      if(arr[i].id == id){
+        carinfo.push(arr[i]);
       }
     }
     return carinfo;
   }
   
+module.exports=(pb1);
