@@ -1,5 +1,8 @@
 pb6=(arr)=>{
     const cname=[];
+    if(typeof arr=='undefined' || arr.length==0){
+        return;
+      }
     for(let i=0;i<arr.length;i++){
         
         if(arr[i].car_make=="BMW" || arr[i].car_make=="Audi"){
