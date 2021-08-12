@@ -1,7 +1,7 @@
 pb3 = (arr) =>{
     const cmodels=[];
-    if(typeof arr=='undefined' || arr.length==0){
-        return;
+    if(typeof arr=='undefined' || typeof arr!='object' || arr.length==0){
+        return cmodels;
       }
     for(var i=0;i<arr.length;i++){
         cmodels.push(arr[i].car_model);

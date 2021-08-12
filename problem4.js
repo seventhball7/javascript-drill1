@@ -1,7 +1,7 @@
 pb4= (arr) =>{
     const years=[];
     if(typeof arr=='undefined' || arr.length==0){
-        return;
+        return years;
       }
    
     for(let i=0;i<arr.length;i++){

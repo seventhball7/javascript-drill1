@@ -1,13 +1,14 @@
 pb1 = (arr, id) => {
     const carinfo=[];
-    if(typeof arr=='undefined' || arr.length==0)
-      return;
+    if(arr=='undefined' || typeof (arr)!='object' || arr.length==0 )
+      return carinfo;
     for(let i=0; i<arr.length; i++){
       if(arr[i].id == id){
         carinfo.push(arr[i]);
       }
-    }
-    return carinfo;
+      
+        }
+      return carinfo; 
   }
   
 module.exports=(pb1);
